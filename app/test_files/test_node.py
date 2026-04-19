@@ -4,13 +4,13 @@ Test individual conversation nodes.
 
 Usage examples (PowerShell):
   # Run all nodes in sequence
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test_node.py" "Hello there"
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test_node.py" "Hello there"
 
   # Run a specific node only (process|respond|memory|audio)
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test_node.py" "What's the weather?" --node respond
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test_node.py" "What's the weather?" --node respond
 
   # Kannada input
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test_node.py" "kn: ನಮಸ್ಕಾರ"
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test_node.py" "kn: ನಮಸ್ಕಾರ"
 """
 
 import os

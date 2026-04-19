@@ -1,4 +1,4 @@
-# 🚀 RaithaMithra Quick Start Guide
+# 🚀 KisanVoice Quick Start Guide
 
 ## Problem Solved ✅
 
@@ -94,7 +94,7 @@ The "sorry an error has occurred" message and missing audio functionality have b
 ## File Structure 📁
 
 ```
-RaithaMithra/
+KisanVoice/
 ├── app/
 │   ├── main.py              # Full version with API keys
 │   ├── main_simple.py       # Demo version (no API keys)
@@ -140,4 +140,4 @@ If you encounter any issues:
 
 ---
 
-**🌾 RaithaMithra** - Your Agricultural AI Assistant is now ready! 🚀
+**🌾 KisanVoice** - Your Agricultural AI Assistant is now ready! 🚀

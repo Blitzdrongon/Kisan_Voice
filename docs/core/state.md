@@ -6,7 +6,7 @@
 
 ## Overview
 
-`state.py` defines the **core data models** used throughout the RaithaMithra application. It uses **Pydantic** for validation and provides enums, message types, conversation state containers, and a global in-memory state store.
+`state.py` defines the **core data models** used throughout the KisanVoice application. It uses **Pydantic** for validation and provides enums, message types, conversation state containers, and a global in-memory state store.
 
 ---
 

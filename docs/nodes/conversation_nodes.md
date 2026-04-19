@@ -8,7 +8,7 @@
 
 `conversation_nodes.py` contains the `ConversationNodes` class which holds all **LangGraph node functions**. Every node receives the full `WorkflowState` dict, performs its work, and returns an updated state dict.
 
-This is the **business logic hub** of RaithaMithra — intent classification, response routing, memory saving, and audio generation all happen here.
+This is the **business logic hub** of KisanVoice — intent classification, response routing, memory saving, and audio generation all happen here.
 
 ---
 

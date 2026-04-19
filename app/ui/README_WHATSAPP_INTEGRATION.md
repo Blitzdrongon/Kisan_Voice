@@ -1,10 +1,10 @@
-# RaithaMithra WhatsApp Bot Integration
+# KisanVoice WhatsApp Bot Integration
 
-This document describes the integration of the RaithaMithra AI workflow into a WhatsApp bot using Twilio.
+This document describes the integration of the KisanVoice AI workflow into a WhatsApp bot using Twilio.
 
 ## Overview
 
-The `whatsapp_test.py` file has been enhanced to include the full RaithaMithra AI workflow, providing:
+The `whatsapp_test.py` file has been enhanced to include the full KisanVoice AI workflow, providing:
 
 - 🌾 **Agricultural AI Conversations**: Intelligent responses about farming, crops, and agriculture
 - 🖼️ **Image Analysis**: Analyze crop photos, plant diseases, and agricultural images
@@ -24,7 +24,7 @@ The `whatsapp_test.py` file has been enhanced to include the full RaithaMithra A
 - Upload crop photos for disease identification
 - Plant growth analysis
 - Agricultural image interpretation
-- Handled by RaithaMithra workflow nodes
+- Handled by KisanVoice workflow nodes
 
 ### 3. Voice Messages
 - Automatic transcription of voice messages
@@ -39,7 +39,7 @@ The `whatsapp_test.py` file has been enhanced to include the full RaithaMithra A
 ## Architecture
 
 ```
-WhatsApp Message → Twilio → Flask App → RaithaMithra Workflow
+WhatsApp Message → Twilio → Flask App → KisanVoice Workflow
                                                       ↓
                                               AI Processing
                                                       ↓
@@ -52,11 +52,11 @@ WhatsApp Message → Twilio → Flask App → RaithaMithra Workflow
 
 ### 1. MessageProcessor
 - Handles incoming WhatsApp messages
-- Integrates with RaithaMithra workflow
+- Integrates with KisanVoice workflow
 - Manages user sessions and conversation history
 - Processes text, images, and voice messages
 
-### 2. RaithaMithra Workflow Integration
+### 2. KisanVoice Workflow Integration
 - Uses the full LangGraph workflow
 - Includes conversation nodes for different intents
 - Memory management for persistent conversations
@@ -92,7 +92,7 @@ TWILIO_SID=your_twilio_sid
 TWILIO_AUTH_TOKEN=your_twilio_auth_token
 TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
 
-# RaithaMithra AI Services
+# KisanVoice AI Services
 GROQ_API_KEY=your_groq_api_key
 ELEVENLABS_API_KEY=your_elevenlabs_api_key
 OPENWEATHER_API_KEY=your_openweather_api_key
@@ -100,8 +100,8 @@ OPENWEATHER_API_KEY=your_openweather_api_key
 
 ### File Structure
 ```
-RaithaMithra/app/ui/
-├── whatsapp_test.py              # Main WhatsApp bot with RaithaMithra integration
+KisanVoice/app/ui/
+├── whatsapp_test.py              # Main WhatsApp bot with KisanVoice integration
 ├── test_whatsapp_integration.py  # Integration test script
 ├── README_WHATSAPP_INTEGRATION.md # This documentation
 └── uploads/                      # Directory for media files
@@ -111,7 +111,7 @@ RaithaMithra/app/ui/
 
 ### 1. Start the Bot
 ```bash
-cd RaithaMithra/app/ui
+cd KisanVoice/app/ui
 python whatsapp_test.py
 ```
 
@@ -131,21 +131,21 @@ python test_whatsapp_integration.py
 1. User sends text message to WhatsApp
 2. Twilio forwards to webhook endpoint
 3. MessageProcessor detects language
-4. RaithaMithra workflow processes the message
+4. KisanVoice workflow processes the message
 5. AI generates contextual response
 6. Response sent back via WhatsApp
 
 ### Image Messages
 1. User sends image to WhatsApp
 2. Image downloaded and saved locally
-3. Image path passed to RaithaMithra workflow
+3. Image path passed to KisanVoice workflow
 4. Workflow nodes handle image analysis automatically
 5. Agricultural advice/analysis sent as response
 
 ### Voice Messages
 1. User sends voice message to WhatsApp
 2. Audio file downloaded and saved
-3. Audio path passed to RaithaMithra workflow
+3. Audio path passed to KisanVoice workflow
 4. Workflow nodes handle transcription and processing
 5. AI response sent back via WhatsApp
 
@@ -229,8 +229,8 @@ For issues or questions:
 1. Check the logs for error details
 2. Verify environment variable configuration
 3. Test individual components using the test script
-4. Review the RaithaMithra workflow documentation
+4. Review the KisanVoice workflow documentation
 
 ## License
 
-This integration is part of the RaithaMithra project and follows the same licensing terms.
+This integration is part of the KisanVoice project and follows the same licensing terms.

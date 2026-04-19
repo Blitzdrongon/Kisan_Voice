@@ -1,12 +1,12 @@
-# 📂 RaithaMithra — `app/` Folder Documentation
+# 📂 KisanVoice — `app/` Folder Documentation
 
 > **Purpose:** This document explains the full architecture, folder structure, workflow logic, Meta WhatsApp integration, and all services inside the `app/` folder. Written for co-workers who are new to the project.
 
 ---
 
-## 🌾 What is RaithaMithra?
+## 🌾 What is KisanVoice?
 
-**RaithaMithra** (ರೈತಮಿತ್ರ — "Farmer's Friend") is an AI-powered agricultural assistant designed to help farmers primarily in North Karnataka, India.
+**KisanVoice** (ರೈತಮಿತ್ರ — "Farmer's Friend") is an AI-powered agricultural assistant designed to help farmers primarily in North Karnataka, India.
 
 It accepts inputs in **Kannada, Hindi, or English** and can respond via:
 - Text conversation (Chainlit web UI)
@@ -115,7 +115,7 @@ app/
 
 ## 🔄 How the Conversation Workflow Works
 
-The brain of RaithaMithra is a **LangGraph pipeline** defined in `core/workflow.py`. Every message (text, voice, or image) from any channel flows through this same pipeline.
+The brain of KisanVoice is a **LangGraph pipeline** defined in `core/workflow.py`. Every message (text, voice, or image) from any channel flows through this same pipeline.
 
 ### Pipeline Diagram
 
@@ -206,7 +206,7 @@ The **WorkflowState** (TypedDict in `workflow.py`) is what actually flows throug
 
 ### `memory.py` — Memory System
 
-RaithaMithra has a **two-tier memory architecture**:
+KisanVoice has a **two-tier memory architecture**:
 
 #### 1. Short-Term Memory (`ShortTermMemory`) — SQLite
 
@@ -241,7 +241,7 @@ memory_manager.search_memories(query)     # semantic search via Qdrant
 
 ### `workflow.py` — LangGraph Pipeline
 
-`RaithaMithraWorkflow` builds and runs the 4-step LangGraph graph.
+`KisanVoiceWorkflow` builds and runs the 4-step LangGraph graph.
 
 #### Key method: `run_conversation()`
 
@@ -606,4 +606,4 @@ Language is detected in two places:
 
 ---
 
-*Last updated: April 2026 | RaithaMithra v1.0*
+*Last updated: April 2026 | KisanVoice v1.0*

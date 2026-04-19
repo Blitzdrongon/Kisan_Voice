@@ -1,5 +1,5 @@
 """
-Memory management for RaithaMithra
+Memory management for KisanVoice
 """
 
 import os
@@ -46,7 +46,7 @@ class MemoryItem:
 class ShortTermMemory:
     """SQLite-based short-term memory for conversation history"""
     
-    def __init__(self, db_path: str = "data/raithamithra.db"):
+    def __init__(self, db_path: str = "data/kisanvoice.db"):
         self.db_path = db_path
         self._init_database()
     
@@ -195,7 +195,7 @@ class ShortTermMemory:
 class LongTermMemory:
     """Qdrant-based long-term memory for semantic search"""
     
-    def __init__(self, qdrant_url: str, collection_name: str = "raithamithra_memory"):
+    def __init__(self, qdrant_url: str, collection_name: str = "kisanvoice_memory"):
         self.qdrant_url = qdrant_url
         self.collection_name = collection_name
         self.client = None

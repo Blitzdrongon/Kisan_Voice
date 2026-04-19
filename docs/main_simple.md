@@ -41,7 +41,7 @@ async def generate_simple_response(user_input, language, image_url):
 
 | Keyword detected | Response |
 |---|---|
-| ಹಲೋ / hello / hi | "Hello! I am RaithaMithra..." |
+| ಹಲೋ / hello / hi | "Hello! I am KisanVoice..." |
 | ಹವಾಮಾನ / weather | "For weather info, set up API keys." |
 | ಬೆಳೆ / crop / pest | "For agricultural advice, set up API keys." |
 | Image uploaded | "For image analysis, set up API keys." |

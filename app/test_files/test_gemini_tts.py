@@ -3,7 +3,7 @@
 Quick test for GeminiTTSService.
 
 Usage (PowerShell):
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test files/test_gemini_tts.py" "Hello from Gemini TTS" mp3
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test files/test_gemini_tts.py" "Hello from Gemini TTS" mp3
 
 Args:
   1) text (default: "Hello from Gemini TTS")

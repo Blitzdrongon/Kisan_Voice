@@ -1,5 +1,5 @@
 """
-Configuration management for RaithaMithra
+Configuration management for KisanVoice
 """
 
 import os
@@ -27,7 +27,7 @@ class Settings(BaseSettings):
     openweather_api_key: str = Field(..., description="OpenWeather API key")
     
     # Application Configuration
-    app_name: str = Field(default="RaithaMithra", description="Application name")
+    app_name: str = Field(default="KisanVoice", description="Application name")
     app_version: str = Field(default="1.0.0", description="Application version")
     debug: bool = Field(default=False, description="Debug mode")
     log_level: str = Field(default="INFO", description="Log level")
@@ -44,7 +44,7 @@ class Settings(BaseSettings):
     # Memory Configuration
     qdrant_url: str = Field(default="http://localhost:6333", description="Qdrant URL")
     qdrant_api_key: Optional[str] = Field(None, description="Qdrant API key (optional for local)")
-    sqlite_database_url: str = Field(default="sqlite:///./raithamithra.db", description="SQLite database URL")
+    sqlite_database_url: str = Field(default="sqlite:///./kisanvoice.db", description="SQLite database URL")
     
     # Redis Configuration
     redis_url: str = Field(default="redis://localhost:6379", description="Redis URL")

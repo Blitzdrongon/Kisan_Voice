@@ -6,7 +6,7 @@
 
 ## Overview
 
-`groq_service.py` is the **primary AI engine** for RaithaMithra. It wraps the Groq API for three capabilities:
+`groq_service.py` is the **primary AI engine** for KisanVoice. It wraps the Groq API for three capabilities:
 
 1. **Text generation** — LLM responses using `llama-3.3-70b-versatile`
 2. **Audio transcription** — Speech-to-text using Groq Whisper

@@ -80,7 +80,7 @@ else:
 | Setting | Value |
 |---|---|
 | Model ID | `google/gemma-3-1b-it-qat-q4_0-unquantized` |
-| Cache dir | `/home/rospc/tanishq/RaithaMithra_v2/.../model` (Linux path) |
+| Cache dir | `/home/rospc/tanishq/KisanVoice_v2/.../model` (Linux path) |
 | Max new tokens | 200 |
 | Temperature | 0.6 |
 

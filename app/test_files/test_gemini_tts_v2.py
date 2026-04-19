@@ -9,7 +9,7 @@ Redesigned Gemini TTS test script
 - Prints helpful diagnostics
 
 Usage (PowerShell):
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test files/test_gemini_tts_v2.py" "Say cheerfully: Have a wonderful day!" Puck
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test files/test_gemini_tts_v2.py" "Say cheerfully: Have a wonderful day!" Puck
 
 Args:
   1) text (default: "Say cheerfully: Have a wonderful day!")

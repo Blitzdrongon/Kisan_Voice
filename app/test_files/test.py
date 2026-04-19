@@ -3,7 +3,7 @@
 Standalone tester for services/groq_service.py
 
 Usage (PowerShell):
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test.py" "your prompt here"
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test.py" "your prompt here"
 
 If no prompt is provided, a default will be used.
 """

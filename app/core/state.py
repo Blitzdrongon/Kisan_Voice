@@ -1,5 +1,5 @@
 """
-State management for RaithaMithra conversations
+State management for KisanVoice conversations
 """
 
 from typing import Dict, List, Optional, Any

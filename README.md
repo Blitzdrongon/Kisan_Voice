@@ -1,4 +1,4 @@
-# ರೈತಮಿತ್ರ (RaithaMithra) 🌾
+# ರೈತಮಿತ್ರ (KisanVoice) 🌾
 
 An AI-powered agricultural assistant chatbot designed to help farmers with crop management, weather information, and agricultural advice. Built with Chainlit for a modern chat interface.
 
@@ -58,7 +58,7 @@ An AI-powered agricultural assistant chatbot designed to help farmers with crop 
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd RaithaMithra
+   cd KisanVoice
    ```
 
 2. **Install dependencies**
@@ -104,7 +104,7 @@ An AI-powered agricultural assistant chatbot designed to help farmers with crop 
 ## Project Structure 📁
 
 ```
-RaithaMithra/
+KisanVoice/
 ├── app/
 │   ├── core/           # Core configuration and state management
 │   ├── nodes/          # Conversation workflow nodes
@@ -136,7 +136,7 @@ chainlit run app/main.py --dev
 Logs are stored in the `logs/` directory.
 
 ### Database
-The application uses SQLite for conversation storage. The database file is created automatically at `raithamithra.db`.
+The application uses SQLite for conversation storage. The database file is created automatically at `kisanvoice.db`.
 
 ## Contributing 🤝
 

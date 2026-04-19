@@ -12,7 +12,7 @@
 
 # # Ensure project root is in sys.path
 # current_dir = os.path.dirname(os.path.abspath(__file__))
-# project_root = os.path.dirname(os.path.dirname(current_dir)) # RaithaMithra/
+# project_root = os.path.dirname(os.path.dirname(current_dir)) # KisanVoice/
 # if project_root not in sys.path:
 #     sys.path.insert(0, project_root)
 
@@ -277,7 +277,7 @@
 #     e5_rag_service = get_e5_rag_service()
     
 #     json_path = Path(
-#         "/home/rospc/tanishq/RaithaMithra_v2/RaithaMithra/rag/final_clean_merged_dataset.json"
+#         "/home/rospc/tanishq/KisanVoice_v2/KisanVoice/rag/final_clean_merged_dataset.json"
 #     )
 
 #     e5_rag_service.add_json(str(json_path))

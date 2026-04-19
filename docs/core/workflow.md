@@ -6,11 +6,11 @@
 
 ## Overview
 
-`workflow.py` defines the **main conversation pipeline** for RaithaMithra using **LangGraph**. It orchestrates the 4-node graph that processes every message from any channel (Chainlit UI, WhatsApp).
+`workflow.py` defines the **main conversation pipeline** for KisanVoice using **LangGraph**. It orchestrates the 4-node graph that processes every message from any channel (Chainlit UI, WhatsApp).
 
 ---
 
-## Class: `RaithaMithraWorkflow`
+## Class: `KisanVoiceWorkflow`
 
 The single workflow class that builds and runs the LangGraph state machine.
 
@@ -163,10 +163,10 @@ except ImportError:
 ## Global Instance
 
 ```python
-raithamithra_workflow = RaithaMithraWorkflow()
+kisanvoice_workflow = KisanVoiceWorkflow()
 
-def get_workflow() -> RaithaMithraWorkflow:
-    return raithamithra_workflow
+def get_workflow() -> KisanVoiceWorkflow:
+    return kisanvoice_workflow
 ```
 
 A single workflow instance is created at module load time and shared across all sessions.
@@ -179,7 +179,7 @@ Returns a dict describing the current workflow state:
 
 ```python
 {
-    "name": "RaithaMithra Conversation Workflow",
+    "name": "KisanVoice Conversation Workflow",
     "nodes": ["process_input", "generate_response", "save_to_memory", "generate_audio"],
     "entry_point": "process_input",
     "end_point": "END",

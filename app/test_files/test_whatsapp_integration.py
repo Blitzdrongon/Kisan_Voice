@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Test script for RaithaMithra WhatsApp integration
+Test script for KisanVoice WhatsApp integration
 """
 
 import os
@@ -11,13 +11,13 @@ from datetime import datetime
 # Add parent directory to path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from whatsapp_test import RaithaMithraWhatsAppApp, MessageProcessor, Config
+from whatsapp_test import KisanVoiceWhatsAppApp, MessageProcessor, Config
 
 
 async def test_workflow_integration():
-    """Test the RaithaMithra workflow integration"""
+    """Test the KisanVoice workflow integration"""
     
-    print("🧪 Testing RaithaMithra WhatsApp Integration...")
+    print("🧪 Testing KisanVoice WhatsApp Integration...")
     
     try:
         # Initialize components
@@ -41,16 +41,16 @@ async def test_workflow_integration():
         print(f"✅ User session created: {session['session_id']}")
         
         # Test workflow processing
-        print("✅ RaithaMithra workflow integration ready")
+        print("✅ KisanVoice workflow integration ready")
         print("   - Image analysis handled by workflow nodes")
         print("   - Audio transcription handled by workflow nodes") 
         print("   - No duplicate service calls")
         
         # Test app initialization
-        app = RaithaMithraWhatsAppApp()
-        print("✅ Flask app initialized with RaithaMithra integration")
+        app = KisanVoiceWhatsAppApp()
+        print("✅ Flask app initialized with KisanVoice integration")
         
-        print("\n🎉 All tests passed! RaithaMithra WhatsApp integration is ready.")
+        print("\n🎉 All tests passed! KisanVoice WhatsApp integration is ready.")
         print("\nFeatures available:")
         print("- 🌾 Agricultural AI conversations")
         print("- 🖼️ Image analysis for crop/plant identification")
@@ -72,7 +72,7 @@ def test_flask_routes():
     print("\n🧪 Testing Flask routes...")
     
     try:
-        app = RaithaMithraWhatsAppApp()
+        app = KisanVoiceWhatsAppApp()
         
         with app.app.test_client() as client:
             # Test health endpoint
@@ -105,7 +105,7 @@ def test_flask_routes():
 
 
 if __name__ == "__main__":
-    print("🌾 RaithaMithra WhatsApp Integration Test")
+    print("🌾 KisanVoice WhatsApp Integration Test")
     print("=" * 50)
     
     # Run tests

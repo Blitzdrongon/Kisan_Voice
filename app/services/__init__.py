@@ -1,5 +1,5 @@
 """
-External API services for RaithaMithra
+External API services for KisanVoice
 """
 
 from .elevenlabs_service import ElevenLabsService, get_elevenlabs_service

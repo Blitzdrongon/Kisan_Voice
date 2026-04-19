@@ -6,7 +6,7 @@
 
 ## Overview
 
-`Meta_whatsapp.py` is a **standalone Flask application** that connects RaithaMithra to **WhatsApp via the Meta Cloud API** (previously known as "WhatsApp Business API"). It handles incoming messages via webhooks and sends responses back through the Graph API.
+`Meta_whatsapp.py` is a **standalone Flask application** that connects KisanVoice to **WhatsApp via the Meta Cloud API** (previously known as "WhatsApp Business API"). It handles incoming messages via webhooks and sends responses back through the Graph API.
 
 This is the **production WhatsApp integration** — use this over the older Twilio-based files.
 

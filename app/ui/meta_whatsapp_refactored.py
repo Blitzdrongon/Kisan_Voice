@@ -3,7 +3,7 @@
 Final Merged Version
 ---------------------
 - Uses clean "sending method" from Code 1 (graph_post_messages)
-- Integrates full RaithaMithra workflow from Code 2
+- Integrates full KisanVoice workflow from Code 2
 - Supports: text, image, audio
 - Sends AI response + A1 audio link
 - Single-file production-ready Flask application
@@ -54,7 +54,7 @@ sys.path.append(str(THIS_DIR.parent))
 try:
     from core.workflow import get_workflow
 except Exception as e:
-    logger.error(f"Could not import RaithaMithra workflow: {e}")
+    logger.error(f"Could not import KisanVoice workflow: {e}")
     raise
 
 # -----------------------------

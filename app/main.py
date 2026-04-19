@@ -1,5 +1,5 @@
 """
-Main Chainlit application for RaithaMithra
+Main Chainlit application for KisanVoice
 """
 
 import os
@@ -62,10 +62,10 @@ async def on_chat_start():
         
         # Welcome message in both languages
         welcome_msg = """
-🌾 **ರೈತಮಿತ್ರ (RaithaMithra)** - Your Agricultural AI Assistant
+🌾 **ರೈತಮಿತ್ರ (KisanVoice)** - Your Agricultural AI Assistant
 
 ನಮಸ್ಕಾರ! ನಾನು ರೈತಮಿತ್ರ, ನಿಮ್ಮ ಕೃಷಿ ಸಹಾಯಕ.
-Hello! I am RaithaMithra, your agricultural assistant.
+Hello! I am KisanVoice, your agricultural assistant.
 
 **ನನ್ನ ಸೌಲಭ್ಯಗಳು / My Features:**
 🌾 ಕೃಷಿ ಸಲಹೆಗಳು ಮತ್ತು ಮಾಹಿತಿ / Agricultural advice and information
@@ -84,7 +84,7 @@ Ask your question in Kannada or English!
         
         await cl.Message(
             content=welcome_msg,
-            author="RaithaMithra"
+            author="KisanVoice"
         ).send()
         
         logger.info(f"Chat session started for user: {user_id}")
@@ -93,7 +93,7 @@ Ask your question in Kannada or English!
         logger.error(f"Error starting chat session: {e}")
         await cl.Message(
             content="ಕ್ಷಮಿಸಿ, ಚಾಟ್ ಪ್ರಾರಂಭಿಸಲು ದೋಷ ಸಂಭವಿಸಿದೆ. / Sorry, an error occurred starting the chat.",
-            author="RaithaMithra"
+            author="KisanVoice"
         ).send()
 
 @cl.on_message
@@ -143,7 +143,7 @@ async def on_message(message: cl.Message):
                         else:
                             await cl.Message(
                                 content="🎤 Sorry, I couldn't understand your voice. Please try again or type your message.",
-                                author="RaithaMithra"
+                                author="KisanVoice"
                             ).send()
                             return
                             
@@ -151,7 +151,7 @@ async def on_message(message: cl.Message):
                         logger.error(f"Error transcribing audio: {e}")
                         await cl.Message(
                             content="🎤 Sorry, there was an error processing your voice input. Please try typing instead.",
-                            author="RaithaMithra"
+                            author="KisanVoice"
                         ).send()
                         return
                     
@@ -215,7 +215,7 @@ async def on_message(message: cl.Message):
         if assistant_response:
             await cl.Message(
                 content=assistant_response,
-                author="RaithaMithra"
+                author="KisanVoice"
             ).send()
         
         # Send audio response if generated
@@ -235,7 +235,7 @@ async def on_message(message: cl.Message):
                             auto_play=True
                         )
                     ],
-                    author="RaithaMithra"
+                    author="KisanVoice"
                 ).send()
                 
                 # Clean up audio file
@@ -258,7 +258,7 @@ async def on_message(message: cl.Message):
         error_msg = "ಕ್ಷಮಿಸಿ, ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಸಂಸ್ಕರಿಸಲು ದೋಷ ಸಂಭವಿಸಿದೆ." if language == "kn" else "Sorry, an error occurred processing your message."
         await cl.Message(
             content=error_msg,
-            author="RaithaMithra"
+            author="KisanVoice"
         ).send()
 
 # Audio handling is now integrated into the main on_message handler

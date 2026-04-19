@@ -4,19 +4,19 @@ Test core/workflow.py independently, with support for text, image, and audio.
 
 Usage examples (PowerShell):
   # Basic text test
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test_workflow.py" "Hello there"
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test_workflow.py" "Hello there"
 
   # With image
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test_workflow.py" "Describe this" --image "d:/ai agent/demo.jpg"
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test_workflow.py" "Describe this" --image "d:/ai agent/demo.jpg"
 
   # With audio only
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test_workflow.py" --audio "d:/ai agent/demo.wav"
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test_workflow.py" --audio "d:/ai agent/demo.wav"
 
   # Kannada
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test_workflow.py" "kn: ನಮಸ್ಕಾರ"
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test_workflow.py" "kn: ನಮಸ್ಕಾರ"
 
   # Direct mode (bypasses LangGraph)
-  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/RaithaMithra/app/test_workflow.py" "Test" --direct
+  & "d:/ai agent/.venv/Scripts/python.exe" "d:/ai agent/KisanVoice/app/test_workflow.py" "Test" --direct
 """
 
 import os

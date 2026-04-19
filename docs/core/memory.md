@@ -6,7 +6,7 @@
 
 ## Overview
 
-`memory.py` implements a **two-tier memory architecture** for RaithaMithra:
+`memory.py` implements a **two-tier memory architecture** for KisanVoice:
 
 | Tier | Storage | Purpose |
 |---|---|---|
@@ -38,7 +38,7 @@ A single item stored in memory.
 
 ### `ShortTermMemory`
 
-SQLite-backed short-term memory. Database file: `app/data/raithamithra.db`
+SQLite-backed short-term memory. Database file: `app/data/kisanvoice.db`
 
 #### Database Schema
 
@@ -102,7 +102,7 @@ history = short_term.get_conversation_history("session_123", limit=5)
 
 Qdrant-backed vector database for semantic memory search.
 
-- Collection: `raithamithra_memory`
+- Collection: `kisanvoice_memory`
 - Vector size: 1536 dimensions
 - Distance metric: Cosine similarity
 

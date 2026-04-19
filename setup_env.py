@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Environment setup script for RaithaMithra
+Environment setup script for KisanVoice
 """
 
 import os
@@ -10,7 +10,7 @@ from pathlib import Path
 def create_env_file():
     """Create .env file with required variables"""
     
-    env_content = """# RaithaMithra Environment Configuration
+    env_content = """# KisanVoice Environment Configuration
 
 # Groq API Configuration
 GROQ_API_KEY=your_groq_api_key_here
@@ -22,7 +22,7 @@ ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
 OPENWEATHER_API_KEY=your_openweather_api_key_here
 
 # Application Configuration
-APP_NAME=RaithaMithra
+APP_NAME=KisanVoice
 APP_VERSION=1.0.0
 DEBUG=true
 LOG_LEVEL=INFO
@@ -39,7 +39,7 @@ TTS_VOICE_ID=21m00Tcm4TlvDq8ikWAM
 # Memory Configuration
 QDRANT_URL=http://localhost:6333
 QDRANT_API_KEY=
-SQLITE_DATABASE_URL=sqlite:///./raithamithra.db
+SQLITE_DATABASE_URL=sqlite:///./kisanvoice.db
 
 # Redis Configuration
 REDIS_URL=redis://localhost:6379
@@ -127,7 +127,7 @@ def test_services():
 def main():
     """Main setup function"""
     
-    print("🌾 RaithaMithra Setup Script")
+    print("🌾 KisanVoice Setup Script")
     print("=" * 40)
     
     # Create .env file

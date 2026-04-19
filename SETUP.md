@@ -1,6 +1,6 @@
-# 🚀 RaithaMithra Setup Guide
+# 🚀 KisanVoice Setup Guide
 
-This guide will help you set up and run the RaithaMithra chatbot on your system.
+This guide will help you set up and run the KisanVoice chatbot on your system.
 
 ## 📋 Prerequisites
 
@@ -35,7 +35,7 @@ This guide will help you set up and run the RaithaMithra chatbot on your system.
 ### 1. Clone and Setup
 ```bash
 git clone <your-repo-url>
-cd RaithaMithra
+cd KisanVoice
 ```
 
 ### 2. Configure Environment
@@ -66,7 +66,7 @@ docker-compose up -d
 docker-compose ps
 
 # View logs
-docker-compose logs -f raithamithra
+docker-compose logs -f kisanvoice
 ```
 
 ### 4. Access the Application
@@ -137,7 +137,7 @@ python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 # Send test message via API
 curl -X POST "http://localhost:8000/whatsapp/send" \
   -H "Content-Type: application/json" \
-  -d '{"to": "+1234567890", "message": "Hello from RaithaMithra!", "language": "kn"}'
+  -d '{"to": "+1234567890", "message": "Hello from KisanVoice!", "language": "kn"}'
 ```
 
 ## 🌐 Production Deployment
@@ -195,7 +195,7 @@ curl -X POST "http://localhost:8000/chat" \
 #### 1. Docker Compose Issues
 ```bash
 # Check service logs
-docker-compose logs raithamithra
+docker-compose logs kisanvoice
 
 # Restart services
 docker-compose restart
@@ -222,7 +222,7 @@ docker-compose up -d --build
 ### Logs and Debugging
 ```bash
 # View application logs
-docker-compose logs -f raithamithra
+docker-compose logs -f kisanvoice
 
 # View Nginx logs
 docker-compose logs -f nginx
@@ -251,5 +251,5 @@ If you encounter issues:
 
 ---
 
-**Happy Farming with RaithaMithra! 🌾🤖**
+**Happy Farming with KisanVoice! 🌾🤖**
 

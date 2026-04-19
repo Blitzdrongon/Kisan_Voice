@@ -1,5 +1,5 @@
 """
-Weather service for RaithaMithra
+Weather service for KisanVoice
 """
 
 import os

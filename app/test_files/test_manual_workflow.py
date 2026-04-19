@@ -2,7 +2,7 @@
 """
 Interactive manual workflow tester.
 
-Type a message, and it will run through RaithaMithra's workflow and print the response.
+Type a message, and it will run through KisanVoice's workflow and print the response.
 Type 'exit' to quit.
 """
 
@@ -46,7 +46,7 @@ async def run_once(user_text: str, language: str = "en", image_path: str | None 
 def main() -> None:
     setup_paths_and_env()
 
-    print("RaithaMithra Manual Workflow Tester")
+    print("KisanVoice Manual Workflow Tester")
     print("- Type your message and press Enter")
     print("- Type 'exit' to quit")
     print("- Optionally prefix with 'kn:' for Kannada, e.g., 'kn: ನಮಸ್ಕಾರ'\n")

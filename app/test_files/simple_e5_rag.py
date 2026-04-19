@@ -4,7 +4,7 @@ from services.rag_e5_groq import E5RAGSystem
 rag = E5RAGSystem()
 
 json_path = Path(
-    "/home/oem/RaithaMithra_v2/RaithaMithra/rag/final_clean_merged_dataset (1).json"
+    "/home/oem/KisanVoice_v2/KisanVoice/rag/final_clean_merged_dataset (1).json"
 )
 
 rag.add_json(str(json_path))

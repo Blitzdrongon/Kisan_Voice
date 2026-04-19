@@ -1,5 +1,5 @@
 """
-Image analyis for RaithaMithra
+Image analyis for KisanVoice
 """
 
 import os

@@ -1,4 +1,4 @@
 """
-Core components for RaithaMithra chatbot
+Core components for KisanVoice chatbot
 """
 

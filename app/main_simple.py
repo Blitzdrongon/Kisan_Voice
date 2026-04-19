@@ -1,5 +1,5 @@
 """
-Simplified Chainlit application for RaithaMithra (for testing without API keys)
+Simplified Chainlit application for KisanVoice (for testing without API keys)
 """
 
 import os
@@ -46,10 +46,10 @@ async def on_chat_start():
         
         # Welcome message in both languages
         welcome_msg = """
-🌾 **ರೈತಮಿತ್ರ (RaithaMithra)** - Your Agricultural AI Assistant
+🌾 **ರೈತಮಿತ್ರ (KisanVoice)** - Your Agricultural AI Assistant
 
 ನಮಸ್ಕಾರ! ನಾನು ರೈತಮಿತ್ರ, ನಿಮ್ಮ ಕೃಷಿ ಸಹಾಯಕ.
-Hello! I am RaithaMithra, your agricultural assistant.
+Hello! I am KisanVoice, your agricultural assistant.
 
 **ನನ್ನ ಸೌಲಭ್ಯಗಳು / My Features:**
 🌾 ಕೃಷಿ ಸಲಹೆಗಳು ಮತ್ತು ಮಾಹಿತಿ / Agricultural advice and information
@@ -70,7 +70,7 @@ Ask your question in Kannada or English!
         
         await cl.Message(
             content=welcome_msg,
-            author="RaithaMithra"
+            author="KisanVoice"
         ).send()
         
         logger.info(f"Chat session started for user: {user_id}")
@@ -79,7 +79,7 @@ Ask your question in Kannada or English!
         logger.error(f"Error starting chat session: {e}")
         await cl.Message(
             content="ಕ್ಷಮಿಸಿ, ಚಾಟ್ ಪ್ರಾರಂಭಿಸಲು ದೋಷ ಸಂಭವಿಸಿದೆ. / Sorry, an error occurred starting the chat.",
-            author="RaithaMithra"
+            author="KisanVoice"
         ).send()
 
 @cl.on_message
@@ -123,7 +123,7 @@ async def on_message(message: cl.Message):
                     if assistant_response:
                         await cl.Message(
                             content=assistant_response,
-                            author="RaithaMithra"
+                            author="KisanVoice"
                         ).send()
                     
                     # Update session
@@ -175,7 +175,7 @@ async def on_message(message: cl.Message):
         if assistant_response:
             await cl.Message(
                 content=assistant_response,
-                author="RaithaMithra"
+                author="KisanVoice"
             ).send()
         
         # Send audio response if generated
@@ -195,7 +195,7 @@ async def on_message(message: cl.Message):
                             auto_play=True
                         )
                     ],
-                    author="RaithaMithra"
+                    author="KisanVoice"
                 ).send()
                 
                 # Clean up audio file
@@ -218,7 +218,7 @@ async def on_message(message: cl.Message):
         error_msg = "ಕ್ಷಮಿಸಿ, ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಸಂಸ್ಕರಿಸಲು ದೋಷ ಸಂಭವಿಸಿದೆ." if language == "kn" else "Sorry, an error occurred processing your message."
         await cl.Message(
             content=error_msg,
-            author="RaithaMithra"
+            author="KisanVoice"
         ).send()
 
 @cl.on_chat_end
@@ -256,7 +256,7 @@ async def generate_simple_response(user_input: str, language: str, image_url: st
         else:
             # English responses
             if any(word in input_lower for word in ["hello", "hi", "hey"]):
-                response = "Hello! I am RaithaMithra. How can I help you?"
+                response = "Hello! I am KisanVoice. How can I help you?"
             elif any(word in input_lower for word in ["weather", "rain", "temperature"]):
                 response = "For weather information, please set up your API keys."
             elif any(word in input_lower for word in ["crop", "agriculture", "pest"]):

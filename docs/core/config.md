@@ -49,7 +49,7 @@ Pydantic reads from:
 
 | Field | Default | Description |
 |---|---|---|
-| `app_name` | `"RaithaMithra"` | Application name |
+| `app_name` | `"KisanVoice"` | Application name |
 | `app_version` | `"1.0.0"` | Version string |
 | `debug` | `False` | Debug mode |
 | `log_level` | `"INFO"` | Logging verbosity |
@@ -81,7 +81,7 @@ Pydantic reads from:
 |---|---|---|
 | `qdrant_url` | `"http://localhost:6333"` | Qdrant vector DB URL |
 | `qdrant_api_key` | `None` | Optional for remote Qdrant |
-| `sqlite_database_url` | `"sqlite:///./raithamithra.db"` | SQLite path |
+| `sqlite_database_url` | `"sqlite:///./kisanvoice.db"` | SQLite path |
 
 ---
 

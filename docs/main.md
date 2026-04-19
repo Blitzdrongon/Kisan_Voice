@@ -6,9 +6,9 @@
 
 ## Overview
 
-`main.py` is the **primary Chainlit web application** for RaithaMithra. It is the entry point for the browser-based chat interface and ties together all services (LLM, TTS, STT, weather, memory, workflow).
+`main.py` is the **primary Chainlit web application** for KisanVoice. It is the entry point for the browser-based chat interface and ties together all services (LLM, TTS, STT, weather, memory, workflow).
 
-When you run RaithaMithra via Chainlit (`chainlit run app/main.py`), this file takes control.
+When you run KisanVoice via Chainlit (`chainlit run app/main.py`), this file takes control.
 
 ---
 

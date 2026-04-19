@@ -1,4 +1,4 @@
 """
-LangGraph nodes for RaithaMithra conversation flow
+LangGraph nodes for KisanVoice conversation flow
 """
 

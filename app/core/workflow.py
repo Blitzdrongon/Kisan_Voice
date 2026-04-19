@@ -1,7 +1,7 @@
 ################################################################
 
 """
-Main LangGraph workflow for RaithaMithra
+Main LangGraph workflow for KisanVoice
 """
 
 import os
@@ -29,7 +29,7 @@ from services.whisper_services import get_whisper_service
 from core.state import ConversationState
 
 
-class RaithaMithraWorkflow:
+class KisanVoiceWorkflow:
     """Main conversation workflow"""
     
     def __init__(self):
@@ -295,7 +295,7 @@ class RaithaMithraWorkflow:
     def get_workflow_info(self) -> Dict[str, Any]:
         """Get workflow information"""
         return {
-            "name": "RaithaMithra Conversation Workflow",
+            "name": "KisanVoice Conversation Workflow",
             "nodes": ["process_input", "generate_response", "save_to_memory", "generate_audio"],
             "entry_point": "process_input",
             "end_point": "END",
@@ -304,9 +304,9 @@ class RaithaMithraWorkflow:
 
 
 # Global workflow instance
-raithamithra_workflow = RaithaMithraWorkflow()
+kisanvoice_workflow = KisanVoiceWorkflow()
 
 
-def get_workflow() -> RaithaMithraWorkflow:
+def get_workflow() -> KisanVoiceWorkflow:
     """Get workflow instance"""
-    return raithamithra_workflow
+    return kisanvoice_workflow

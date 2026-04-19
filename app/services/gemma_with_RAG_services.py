@@ -22,7 +22,7 @@
 #         collection_name: str = "e6_knowledge_base",
 #         chroma_db_path: str = "./chroma_db_e6",
 #         model_id: str = "google/gemma-3-1b-it-qat-q4_0-unquantized",
-#         cache_dir: str = r"/home/rospc/tanishq/RaithaMithra_v2/RaithaMithra/model"
+#         cache_dir: str = r"/home/rospc/tanishq/KisanVoice_v2/KisanVoice/model"
 #     ):
 #         self.model_id = model_id
 #         self.cache_dir = cache_dir
@@ -283,7 +283,7 @@
 # async def test():
 #     service = get_gemma_with_RAG_service()
 #     json_path = Path(
-#     r"/home/rospc/tanishq/RaithaMithra_v2/RaithaMithra/rag/final_clean_merged_dataset.json"
+#     r"/home/rospc/tanishq/KisanVoice_v2/KisanVoice/rag/final_clean_merged_dataset.json"
 # )
 #     #service.add_json(str(json_path))
 #     query = "ಸಕ್ಕರೆಕಬ್ಬು ಬೆಳೆಯಲು ಸೂಕ್ತವಾದ ಮಣ್ಣು ಯಾವುದು? "

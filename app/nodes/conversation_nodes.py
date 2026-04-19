@@ -1,5 +1,5 @@
 """
-Conversation nodes for RaithaMithra LangGraph
+Conversation nodes for KisanVoice LangGraph
 """
 
 import uuid
@@ -404,7 +404,7 @@ class ConversationNodes:
         
         try:
             # json_path = Path(
-            #     "/home/rospc/tanishq/RaithaMithra_v2/RaithaMithra/rag/final_clean_merged_dataset.json"
+            #     "/home/rospc/tanishq/KisanVoice_v2/KisanVoice/rag/final_clean_merged_dataset.json"
             # )
 
             #self.gemma_with_rag_service.add_json(str(json_path))
